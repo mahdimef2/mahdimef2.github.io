@@ -1,12 +1,126 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
+<html>
+<head>
+	<title>About Me</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			color: #000;
+			background-color: #fff;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+
+		.circle {
+			display: inline-block;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.circle img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+	.about-me {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-me h2 {
+  color: #555;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-me p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about-me a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-me a:hover {
+  text-decoration: underline;
+}
+
+		.social-icons {
+			margin-top: 35px;
+			display: flex;
+			justify-content: center;
+		}
+
+		.social-icon {
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin: 0 10px;
+			overflow: hidden;
+			background-color: #5a3030;
+			color: #fff;
+			font-size: 24px;
+			text-align: center;
+			line-height: 50px;
+			transition: all 0.3s ease;
+		}
+
+		.social-icon:hover {
+			background-color: #ffd700;
+			color: #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="circle">
+			<img src="mahdi.jpg" alt="Your Image">
+		</div>
+
+		<div class="about-me">
+      <h2>About Me</h2>
+      <p>Hello, my name is Mahdi Eshghi, and I'm a programmer with a keen interest in cryptocurrency and blockchain technology. With over a year of experience working with Python and Django, I've developed a deep understanding of the software development lifecycle, from planning and design to testing and deployment.</p>
+      <p>When I'm not coding, you can usually find me reading about the latest breakthroughs in software development or exploring the world of digital currencies. I'm also an avid traveler and enjoy exploring new cultures and cuisines whenever I have the opportunity. If you'd like to get in touch with me, feel free to use the contact link below!</p>
+    </div>
+    
+
+		<div class="social-icons">
+
+      <a href="mailto:mahdi.e.mef@gmail.com"><div class="social-icon"><i class="fa fa-envelope"></i></div></a>
+      <a href="https://t.me/mahdimef"><div class="social-icon"><i class="fa fa-telegram"></i></div></a>
+			<a href="https://www.linkedin.com/in/mahdi-eshghi-44b913238/"><div class="social-icon"><i class="fa fa-linkedin"></i></div></a>
+			<a href="https://github.com/mahdimef2"><div class="social-icon"><i class="fa fa-github"></i></div></a>
+		</div>
+	</div>
+
+</body>
 </html>
